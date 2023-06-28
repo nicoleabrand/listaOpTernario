@@ -6,6 +6,11 @@
     // Verifique qual é o meio de transporte mais barato e apresente em tela, especificando quanto custará para ir e voltar do trabalho diariamente.
 
     //Entrada
+    const preco = Number(prompt(`Informe o valor do litro do combuestível`).trim());
+    const litro = Number(prompt(`Informe a quantidade de litros gastos para se deslocar ao trabalho diariamente`).trim());
+    const publico = Number(prompt(`Informe o valor do transporte público para se deslocar ao trabalho diariamente`).trim());
+    let mensagemFi = (publico<preco*litro) ? `O meio mais barato é o público, sendo R$${preco*litro-publico} mais barato.`:`O meio mais barato é o pessoal, sendo ${publico-preco*litro}`;
+    alert(mensagemFi);
 
 
     //Processamento

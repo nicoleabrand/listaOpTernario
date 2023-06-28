@@ -4,7 +4,9 @@
     //Construa um programa que leia um caractere e informe se este caractere é uma vogal.
 
     //Entrada
-
+    const letra = prompt(`Informe uma letra`).trim().toUpperCase();
+    let mensagemFi = (letra=="A" || letra== "E" || letra=="I"|| letra=="O"|| letra=="U") ? `A letra ${letra} é uma vogal` : `A letra ${letra} não é uma vogal`;
+    alert(mensagemFi);
 
     //Processamento
 

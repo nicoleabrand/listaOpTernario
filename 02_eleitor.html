@@ -4,8 +4,10 @@
     //Considerando que no Brasil é possível votar a partir dos 16 anos de idade, leia o ano de nascimento de uma pessoa e informe se ela poderá votar no ano atual. Ignore mês e dia de nascimento.
 
     //Entrada
-
-
+    const idade = parseInt(prompt(`Informe seu ano de nascimento`));
+    const ano = new Date().getFullYear
+    let mensagemFi = (ano-idade<16) ? `Você não poderá votar esse ano` : `Você poderá votar esse ano`;
+    alert(mensagemFi);
     //Processamento
 
 

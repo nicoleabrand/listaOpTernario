@@ -8,6 +8,10 @@
     // Apresente o salário final recebido pelo funcionário semanalmente e o preço de cada hora trabalhada.
 
     //Entrada
+    const horas = Number(prompt(`Informe a quantidade de horas trabalhadas semanalmente`).trim());
+    const recebe = Number(prompt(`Informe o valor recebido por hora trabalhada`).trim());
+    let mensagemFi = (horas<=45) ? `O salário final será de ${recebe*horas}`:(horas<=60) ? `O salário final será de ${(recebe*1.2) *horas}`:`O salário final será de ${(recebe*1.3)*horas}`;
+    alert(mensagemFi);
 
 
     //Processamento
