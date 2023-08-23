@@ -9,7 +9,7 @@
     
     //Entrada
     const preco = Number(prompt(`Informe o preço do produto`).trim());
-    let mensagemFi = (preco>=280) ? `O aumento foi de ${preco-preco*0.2}` : (preco>280 && preco<=700)?`O aumento foi de ${preco-preco*0.15}`: (preco>700 && preco<=1500)?`O aumento foi de ${preco-preco*0.1}` : `O aumento foi de ${preco-preco*0.05}`;
+    let mensagemFi = (preco>=280) ? `O aumento foi de ${preco+(preco*0.2)}` : (preco>280 && preco<=700)?`O aumento foi de ${preco+(preco*0.15)}`: (preco>700 && preco<=1500)?`O aumento foi de ${preco+(preco*0.1)}` : `O aumento foi de ${preco+(preco*0.05)}`;
     alert(mensagemFi);
 
     //Processamento
